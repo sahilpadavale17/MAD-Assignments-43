@@ -1,1 +1,34 @@
+package com.example.linear_layout;
 
+import android.os.Bundle;
+import android.widget.*;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+    EditText etName, etPassword;
+    Button btnLogin;
+    TextView tvResult;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        etName = findViewById(R.id.etName);
+        etPassword = findViewById(R.id.etPassword);
+        btnLogin = findViewById(R.id.btnLogin);
+        tvResult = findViewById(R.id.tvResult);
+
+        btnLogin.setOnClickListener(v -> {
+            String name = etName.getText().toString();
+            String password = etPassword.getText().toString();
+
+            if(name.equals("admin") && password.equals("12345")) {
+                tvResult.setText("Login Successful");
+            } else {
+                tvResult.setText("Login Failed");
+            }
+        });
+    }
+}
