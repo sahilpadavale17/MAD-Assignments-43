@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <!-- Profile Image -->
+<!--        <ImageView-->
+<!--            android:id="@+id/profileImage"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:src="@drawable/cv"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:scaleType="centerCrop"/>-->
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mr. Sahil Ekanath Padavale"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <!-- Branch -->
+
+        <!-- Skills Title -->
+        <TextView
+            android:id="@+id/txtBranch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="B.Tech CSE"
+            android:textColor="#555555"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skills"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Skills List -->
+        <TextView
+            android:id="@+id/txtSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Java\n• C++\n• Python\n• Flutter\n• AI  Machine Learning"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+
+        <!-- Projects Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Projects"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Projects List -->
+        <TextView
+            android:id="@+id/txtProjects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Expiry Date Alert System (AI)\n• Royal Enfield AI Maintenance System\n• Digital Farming Website"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+
+        <!-- Contact Button -->
+        <Button
+            android:id="@+id/btnContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#6200EE"
+            android:text="Contact Me"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
