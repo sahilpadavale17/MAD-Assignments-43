@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Habit Tracker"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:padding="10dp"/>
+
+    <!-- Selected Date -->
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:textSize="16sp"
+        android:textColor="#424242"
+        android:padding="6dp"/>
+
+    <!-- Pick Date Button -->
+    <Button
+        android:id="@+id/btnPickDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Add Habit Button -->
+    <Button
+        android:id="@+id/btnAddHabit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Habit"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"/>
+
+    <!-- View Progress Button -->
+    <Button
+        android:id="@+id/btnProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Progress"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#81C784"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Consistency -->
+    <TextView
+        android:id="@+id/tvConsistency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consistency: 0%"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:padding="10dp"/>
+
+    <!-- 🔥 Streak -->
+    <TextView
+        android:id="@+id/tvStreak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔥 Streak: 0 days"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FF5722"
+        android:padding="10dp"/>
+
+    <!-- Habit List -->
+    <ListView
+        android:id="@+id/listViewHabits"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="10dp"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
