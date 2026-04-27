@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Input Controls"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- EditText -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="EditText: Enter name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp" />
+
+        <!-- AutoCompleteTextView -->
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="AutoComplete: Type Country"
+            android:layout_marginBottom="16dp" />
+
+        <!-- CheckBox -->
+        <CheckBox
+            android:id="@+id/checkBoxSubscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox: Subscribe"
+            android:layout_marginBottom="16dp" />
+
+        <!-- RadioButtons -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioGroup (Gender):" />
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+            <RadioButton android:id="@+id/radioMale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Male" />
+            <RadioButton android:id="@+id/radioFemale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Female" />
+        </RadioGroup>
+
+        <!-- ToggleButton -->
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="Toggle: ON"
+            android:textOff="Toggle: OFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Switch -->
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/switchNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MaterialSwitch: Notifications"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Chips -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ChipGroup (Interests):" />
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <com.google.android.material.chip.Chip android:id="@+id/chip1" style="@style/Widget.Material3.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Coding" />
+            <com.google.android.material.chip.Chip android:id="@+id/chip2" style="@style/Widget.Material3.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reading" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- Spinner -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spinner (City):" />
+        <Spinner
+            android:id="@+id/spinnerCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pickers -->
+        <Button
+            android:id="@+id/buttonDate"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Date" />
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected Date: None"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/buttonTime"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Time" />
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected Time: None"
+            android:layout_marginBottom="16dp" />
+
+        <!-- SeekBar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SeekBar (Volume):" />
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:layout_marginBottom="16dp" />
+
+        <!-- RatingBar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RatingBar:" />
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Submit -->
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show All Inputs" />
+
+    </LinearLayout>
+</ScrollView>
